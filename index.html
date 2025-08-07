@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jump’n’Run Pikachu Style</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="score">Distance: 0</div>
+<div id="coins">Coins: 0</div>
+
+<canvas id="gameCanvas" width="480" height="320"></canvas>
+
+<div id="gameOver" class="hidden">
+  <h2>Game over Bitch!</h2>
+  <p id="finalScore"></p>
+  <button id="restartBtn">Start new</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
