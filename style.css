@@ -1,0 +1,68 @@
+body, html {
+  margin: 0; padding: 0;
+  background-color: #87CEEB; /* hellblauer Himmel */
+  font-family: Arial, sans-serif;
+  user-select: none;
+  overflow: hidden;
+}
+
+#gameCanvas {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: 3px solid #555;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#score, #coins {
+  position: fixed;
+  top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  user-select: none;
+}
+
+#score {
+  left: 10px;
+}
+
+#coins {
+  right: 10px;
+}
+
+#gameOver {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#restartBtn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 20px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 0 #aa8800;
+}
+
+#restartBtn:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
